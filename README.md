@@ -578,20 +578,3 @@ This route is public thereby allowing patient to answer question. Formdata is us
     {
       "data": "Feedback saved successfully"
     }
-
-
-
-    
-### Snapshots   
-
-
-   
-  
-
-
-
-
-
-
-
-
