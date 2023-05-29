@@ -46,7 +46,7 @@ before running it
 
 Snapshot
 
-![image](https://user-images.githubusercontent.com/37757522/174438196-a9b7469b-b022-429d-b18a-89d354593130.png)
+
 
 Stop application running on docker
 
@@ -54,7 +54,7 @@ Stop application running on docker
     
  snapshot
  
- ![image](https://user-images.githubusercontent.com/37757522/174439557-72226895-90e1-4699-a2ce-1b234eb5e3fe.png)
+ 
 
 
 Upon successful run access project frontend via link
@@ -582,15 +582,14 @@ This route is public thereby allowing patient to register and have access to rec
 
 - Attempt question `http://127.0.0.1:3000/api/v1/patient/questions` method `POST`.
 
-This route is public thereby allowing patient to answer question
+This route is public thereby allowing patient to answer question. Formdata is used because some question might need user uploading files and screenshot of input is in the snapshot below.
 
-#### Request
+#### Snapshots
 
-    {
-      "firstname":"Fred",
-      "lastname":"Ade",
-      "email":"adetimifred+02@gmail.com"
-    }
+    ![image](https://github.com/sprintcorp/HMS/assets/37757522/a0d2b746-4801-4615-86d8-541975096e09)
+    ![image](https://github.com/sprintcorp/HMS/assets/37757522/67793031-2e3a-4785-9151-ba9899dd30f6)
+
+
 
     
 #### Response with status code 201
