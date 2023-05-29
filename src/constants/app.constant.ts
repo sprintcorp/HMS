@@ -1,0 +1,1 @@
+export const notificationInterval: any = '24h';
