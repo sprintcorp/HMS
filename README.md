@@ -2,7 +2,7 @@
 
 ## Brief description
 
-The application is an API designed to let admin create questions to get feedback from users for doctors and staff within the system.
+The application is an API designed to let admin create questions to get feedback from patient for doctors and staff within the system. When questions are created and published patients get notification informing them to answer the questions and failure to do so reminds patients at set intervals which admin set in the system.
 
 ## Features
 - Create questions
