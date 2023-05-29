@@ -79,7 +79,7 @@ export class AdminService {
 
     async deleteStaff(id: ObjectId){
         try{
-        const staff = await this.authModel.findByIdAndDelete(id);
+        const staff = await this.authModel.findOneAndDelete({id:id,role:'doctor'});
         return "Staff deleted successfully"
         }catch(e){
             throw e;
