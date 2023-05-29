@@ -1,7 +1,6 @@
 import { JwtService } from '@nestjs/jwt';
 import { Injectable, CanActivate, ExecutionContext, UnauthorizedException } from '@nestjs/common';
-import { Request, Response, NextFunction } from 'express';
-import { AuthService } from 'src/services/auth/auth.service';
+import { Request } from 'express';
 import { Reflector } from '@nestjs/core';
 import { IS_PUBLIC_KEY } from 'src/decorators/authorization.decorator';
 import { InjectModel } from '@nestjs/mongoose';
@@ -43,8 +42,6 @@ export class AuthGuard implements CanActivate {
         }
       );
       
-      // 💡 We're assigning the payload to the request object here
-      // so that we can access it in our route handlers
       request['user'] = await this.authModel.findOne({email:payload.email});
     } catch {
       throw new UnauthorizedException();

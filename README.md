@@ -18,7 +18,6 @@ The application is an API designed to let admin create questions to get feedback
 - ExpressJs
 - MongoDb
 - Mongoose
-- Docker
 
 ## Login details
 
@@ -36,24 +35,6 @@ Clone the repository
 Switch to project directory
 
     cd HMS/
-
-Run via Docker
-
-    docker-compose up -d
-
-N:B This will take time running for the first time because it will build the application
-before running it
-
-Snapshot
-
-
-
-Stop application running on docker
-
-    docker-compose down
-    
- snapshot
- 
  
 
 
